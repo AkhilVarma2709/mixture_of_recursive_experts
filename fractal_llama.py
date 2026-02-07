@@ -1,5 +1,5 @@
 """
-Fractal Llama: A Novel Architecture with Mixture of Recursive Experts (MoRE)
+MORE: Mixture of Recursive Experts
 ============================================================================
 
 This architecture combines:
@@ -12,7 +12,7 @@ Key Innovation: Each "expert" is itself a tiny recursive transformer that
 structure where computation depth varies per token based on routing.
 
 Author: AI Practicals
-Date: December 2024
+Date: February 2026
 """
 
 import math
@@ -29,7 +29,7 @@ from typing import Optional, Tuple
 
 @dataclass
 class Config:
-    """Configuration for Fractal Llama."""
+    """Configuration for MORE."""
     vocab_size: int = 65          # Character vocabulary size
     n_embd: int = 128             # Embedding dimension
     n_head: int = 4               # Number of attention heads
@@ -182,7 +182,7 @@ class SwiGLU(nn.Module):
 
 class RecursiveExpert(nn.Module):
     """
-    A Recursive Expert - the core innovation of Fractal Llama.
+    A Recursive Expert - the core innovation of MORE.
     
     As per the blueprint diagram:
     ┌──────────────────────────────────────────────────────────────┐
@@ -413,12 +413,12 @@ class FractalBlock(nn.Module):
 
 
 # =============================================================================
-# Part 4: FractalLlama - The Complete Model
+# Part 4: MORE - The Complete Model
 # =============================================================================
 
-class FractalLlama(nn.Module):
+class MORE(nn.Module):
     """
-    Fractal Llama: A novel architecture combining MoE with recursive experts.
+    MORE: A novel architecture combining MoE with recursive experts.
     
     Architecture:
         Token Embedding
@@ -539,9 +539,9 @@ if __name__ == "__main__":
     print("""
     ╔═══════════════════════════════════════════════════════════════════╗
     ║                                                                   ║
-    ║            🌀 FRACTAL LLAMA: Training Run 🌀                       ║
+    ║            🌀 MORE: Training Run 🌀                                ║
     ║                                                                   ║
-    ║   Architecture: Transformer + MoRE (Mixture of Recursive Experts) ║
+    ║   Architecture: Transformer + MORE (Mixture of Recursive Experts) ║
     ║   Data: Shakespeare (Tiny Shakespeare)                            ║
     ║                                                                   ║
     ╚═══════════════════════════════════════════════════════════════════╝
@@ -590,11 +590,11 @@ if __name__ == "__main__":
     )
     
     # Create model
-    model = FractalLlama(config).to(device)
+    model = MORE(config).to(device)
     
     # Print model info
     total_params = count_parameters(model)
-    print(f"\n🌀 Fractal Llama Model:")
+    print(f"\n🌀 MORE Model:")
     print(f"   Total parameters: {total_params:,}")
     print(f"   Layers: {config.n_layer}")
     print(f"   Experts: {config.num_experts} (top-{config.top_k} routing)")
@@ -683,7 +683,7 @@ if __name__ == "__main__":
     print("   • Router → top-k selection")
     print("   • RecursiveExpert → step embeddings + recursive loop")
     print("   • MoRE_Layer → sparse routing + weighted combination")
-    print("   • Full FractalLlama → end-to-end training on real data")
+    print("   • MORE → end-to-end training on real data")
     
     print(f"\n{'='*60}")
     print("✅ Training Complete!")
