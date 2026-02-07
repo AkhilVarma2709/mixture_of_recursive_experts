@@ -150,10 +150,10 @@ pip install -r requirements.txt
 
 ```bash
 # Train the model
-python fractal_llama.py
+python more.py
 
 # Run full benchmark suite
-python benchmark_colab.py
+python benchmark_more.py
 ```
 
 ---
@@ -162,8 +162,8 @@ python benchmark_colab.py
 
 ```
 Fractal-Llama/
-├── fractal_llama.py      # Main model implementation
-├── benchmark_colab.py    # Benchmarking & visualization script
+├── more.py               # Main model implementation
+├── benchmark_more.py     # Benchmarking & visualization script
 ├── requirements.txt      # Dependencies
 ├── input.txt             # Shakespeare dataset
 ├── images/               # Benchmark visualizations
