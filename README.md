@@ -141,8 +141,8 @@ Both models converge to similar loss values, with the baseline being slightly be
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Fractal-Llama.git
-cd Fractal-Llama
+git clone https://github.com/YOUR_USERNAME/MORE.git
+cd MORE
 pip install -r requirements.txt
 ```
 
@@ -161,7 +161,7 @@ python benchmark_more.py
 ## 📁 Project Structure
 
 ```
-Fractal-Llama/
+MORE/
 ├── more.py               # Main model implementation
 ├── benchmark_more.py     # Benchmarking & visualization script
 ├── requirements.txt      # Dependencies
