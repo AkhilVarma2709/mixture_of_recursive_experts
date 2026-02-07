@@ -141,8 +141,8 @@ Both models converge to similar loss values, with the baseline being slightly be
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/MORE.git
-cd MORE
+git clone https://github.com/AkhilVarma2709/mixture_of_recursive_experts.git
+cd mixture_of_recursive_experts
 pip install -r requirements.txt
 ```
 
