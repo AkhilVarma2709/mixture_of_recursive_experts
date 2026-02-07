@@ -208,7 +208,16 @@ MIT License - feel free to use, modify, and distribute.
 
 <div align="center">
 
-*An experimental architecture by AI Practicals • February 2026*
+### 👨‍💻 About the Author
+
+**Architecture designed by Akhil Varma**  
+*Code implementation assisted by AI*
+
+The core concept of Mixture of Recursive Experts—combining sparse routing with iterative "thinking" loops—was conceived and designed by Akhil Varma. The implementation was developed with AI assistance to translate the architectural vision into working PyTorch code.
+
+---
+
+*February 2026*
 
 **This project demonstrates that not all innovations work at all scales—and that's okay. The journey of exploration is valuable.**
 

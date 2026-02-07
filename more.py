@@ -11,7 +11,7 @@ Key Innovation: Each "expert" is itself a tiny recursive transformer that
 "thinks" for N steps before producing output. This creates a fractal-like
 structure where computation depth varies per token based on routing.
 
-Author: AI Practicals
+Author: Akhil Varma
 Date: February 2026
 """
 
